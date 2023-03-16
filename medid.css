@@ -2,23 +2,18 @@ html {
     font-family: 'Lexend', sans-serif;
     font-size: 26px;
     border: 5px solid red;
-    background-color: lightblue;
+    background-color: lightpink;
     text-align: center;
-    margin: 0px;
 }
 
-header {
-    background-color: red;
+header, h2 {
+    background-color: rgb(255, 40, 40);
     padding: 15px;
+    width: 98%;
 }
 
 h1 {
     font-size: 2em;
-}
-
-h2 {
-    background-color: red;
-    width: 100%;
 }
 input {
     border: hidden;
@@ -36,4 +31,17 @@ li {
     display: inline-flex;
     margin: 10px;
     padding: 6px;
+}
+#odetails {
+    font-size: 20px;
+    max-width: 95%;
+}
+.other-details {
+    text-align: center;
+}
+a {
+    color: darkblue;
+}
+a:hover {
+    color: pink;
 }
