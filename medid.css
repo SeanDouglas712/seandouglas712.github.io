@@ -62,9 +62,3 @@ li {
 .other-details {
     text-align: center;
 }
-
-@media only screen and (max-width: 100%) {
-    html {
-        max-width: fit-content;
-    }
-}
