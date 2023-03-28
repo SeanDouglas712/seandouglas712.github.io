@@ -1,18 +1,18 @@
 html {
-    font-family: 'Lexend', sans-serif;
+    font-family: 'Open-Dyslexic', sans-serif;
     font-size: 26px;
     border: 5px solid red;
-    background-color: lightpink;
+    background-color: rgb(211, 172, 211);
     text-align: center;
 }
 
 header, h2, footer {
     background-color: rgb(255, 40, 40);
-    padding: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 10px;
+    border-radius: 12px;
+
 }
-.pushable {
+.toggle-button, .pushable {
     background: hsl(340deg 100% 32%);
     border-radius: 10px;
     border: none;
@@ -33,15 +33,27 @@ header, h2, footer {
 .pushable:active .front {
     transform: translateY(-2px);
   }
+.toggle-button:active .front {
+    transform: translateY(-2px);
+}
+
 a {
     text-decoration: none;
     color: black;
 }
+nav {
+    background-color: rgb(255, 40, 40);
+    border-radius: 12px;
+}
 h1 {
     font-size: 2em;
 }
-input {
+input, option {
     border: hidden;
+    border-radius: 10px;
+}
+input[type="text"] {
+    font-size: 17px;
 }
 
 ul {
@@ -51,16 +63,19 @@ ul {
     overflow: hidden;
     border-radius: 50px;
 }
-
 li {
     display: inline-flex;
     margin: 10px;
     padding: 6px;
 }
 #odetails {
+    text-align: left;
     font-size: 20px;
     max-width: 95%;
 }
 .other-details {
-    text-align: center;
+    text-align: left;
+}
+.toggle-content {
+    display: none;
 }
