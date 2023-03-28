@@ -7,297 +7,235 @@
     <link rel="stylesheet" href="./medid.css">
 </head>
 <header>
+    <nav>
     <div>
         <h1>Medical Identification</h1>
     </div>
-    <nav>
         <div>
             <ul>
-                <li><button class="pushable"><span class="front">Log In</span></button></li>
-                <li class="pushable"><a href="#details"><span class="front">Details</span></a></li>
-                <li class="pushable"><a href="#allergies"><span class="front">Allergies</span></a></li>
-                <li class="pushable"><a href="#medications"><span class="front">Medications</span></a></li>
-                <li class="pushable"><a href="#disabilities"><span class="front">Disabilities</span></a></li>
+                    <li><button class="pushable"><span class="front">Log In</span></button></li>
+                    <button class="toggle-button" data-target="content-1"><span class="front">Details</span></button>
+                    <button class="toggle-button" data-target="content-2"><span class="front">Allergies</span></button>
+                    <button class="toggle-button" data-target="content-3"><span class="front">Medications</span></button>
+                    <button class="toggle-button" data-target="content-4"><span class="front">Disabilities</span></button>
+                    <div class="toggle-content" id="content-1">
+                        <h2>Details</h2>
+                        <form action="">
+                            <div class="ffadiv">
+                                <ul class="linelist">
+                                    <li>
+                                        <label for="fname">First Name: </label>
+                                        <input type="text" id="fname" name="fname">
+                                    </li>
+                                    <li>
+                                        <label for="lname">Last Name: </label>
+                                        <input type="text" id="lname" name="lname">
+                                    </li>
+                                    <li>
+                                        <label for="pname">Preferred Name: </label>
+                                        <input type="text" id="pname" name="pname">
+                                    </li>
+                                    <li>
+                                        <label for="pnoun">Pronoun's: </label>
+                                        <input type="text" id="pnoun" name="pnoun">
+                                    </li>
+                                </ul>
+                            </div>
+                                <ul>
+                                    <div class="ffbdiv">
+                                        <ul>
+                                            <li>
+                                                <label for="gender">Gender:</label>
+                                                <select name="gender" id="gender">
+                                                    <option value="select">Select Gender</option>
+                                                    <option value="male">Male</option>
+                                                    <option value="female">Female</option>
+                                                    <option value="tmale">Trans Male</option>
+                                                    <option value="tfemale">Trans Female</option>
+                                                    <option value="nonbinary">Non Binary</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                            </li>
+                                            <li>
+                                                <label for="btype">Blood Type</label>
+                                                <select name="btype" id="btype">
+                                                    <option value="select">Select Blood Type</option>
+                                                    <option value="opos">O Positive</option>
+                                                    <option value="oneg">O Negative</option>
+                                                    <option value="apos">A Positive</option>
+                                                    <option value="aneg">A Negative</option>
+                                                    <option value="bpos">B Positive</option>
+                                                    <option value="bneg">B Negative</option>
+                                                    <option value="abpos">AB Positive</option>
+                                                    <option value="abneg">AB Negative</option>
+                                                </select>
+                                            </li>
+                                            <li>
+                                                <label for="cperson">Emergency Contact Name: </label>
+                                                <input type="text" id="cperson" name="cperson">
+                                            </li>
+                                            <li>
+                                                <label for="cperson">Emergency Contact Number:</label>
+                                                <input type="text" id="cperson" name="cperson">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="toggle-content" id="content-2">
+                        <h2>Allergies</h2>
+                        <form action="" class="aform">
+                            <ul>
+                                <li class="alist">
+                                    <label for="">1:</label>
+                                    <input type="text">
+                                </li>
+                                <li class="alist">
+                                    <label for="">2:</label>
+                                    <input type="text">
+                                </li>
+                                <li class="alist">
+                                    <label for="">3:</label>
+                                    <input type="text">
+                                </li>
+                                <li class="alist">
+                                    <label for="">4:</label>
+                                    <input type="text">
+                                </li>
+                                <li class="alist">
+                                    <label for="">5:</label>
+                                    <input type="text">
+                                </li>
+                                <li class="alist">
+                                    <label for="">6:</label>
+                                    <input type="text">
+                                </li>
+                                <div>
+                                    <div>
+                                        <li class="other-details">
+                                        <label for="">Please fill in any other details:</label>
+                                        </li>
+                                    </div>
+                                <li>
+                                <textarea name="odetails" id="odetails" cols="100%" rows="10">
+                                </textarea>
+                                </li>
+                                </div>
+                            </ul>
+                        </form>
+                    </div>
+                        <div class="toggle-content" id="content-3">
+                            <h2>Medications</h2>
+                            <form action="">
+                                <ul>
+                                    <li class="malist">
+                                        <label for="">1:</label>
+                                        <input type="text">
+                                    </li>
+                                    <li class="malist">
+                                        <label for="">2:</label>
+                                        <input type="text">    
+                                    </li>
+                                    <li class="malist">
+                                        <label for="">3:</label>
+                                        <input type="text">   
+                                    </li>
+                                    <li class="malist">
+                                        <label for="">4:</label>
+                                        <input type="text">
+                                    </li>
+                                    <li class="malist">
+                                        <label for="">5:</label>
+                                        <input type="text">
+                                    </li>
+                                    <li class="malist">
+                                        <label for="">6:</label>
+                                        <input type="text">
+                                    </li>
+                                <div>
+                                    <div>
+                                        <li class="other-details">
+                                        <label for="">Please fill in any other details:</label>
+                                        </li>
+                                    </div>
+                                        <li>
+                                        <textarea name="odetails" id="odetails" cols="100%" rows="10">
+                                        </textarea>
+                                        </li>
+                                </div>
+                                </ul>
+                            </form>
+                        </div>
+                        <div class="toggle-content" id="content-4">
+                            <h2>Disabilities</h2>
+                            <form action="">
+                                <ul>
+                                    <div>
+                                        <li class="dalist">
+                                            <label for="">1:</label>
+                                            <input type="text">
+                                        </li>
+                                        <li class="dalist">
+                                            <label for="">2:</label>
+                                            <input type="text">
+                                        </li>
+                                        <li class="dalist">
+                                            <label for="">3:</label>
+                                            <input type="text">
+                                        </li>
+                                        <li class="dalist">
+                                            <label for="">4:</label>
+                                            <input type="text">
+                                        </li>
+                                        <li class="dalist">
+                                            <label for="">5:</label>
+                                            <input type="text">
+                                        </li>
+                                        <li class="dalist">
+                                            <label for="">6:</label>
+                                            <input type="text">
+                                        </li>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <li class="other-details">
+                                            <label for="">Please fill in any other details:</label>
+                                            </li>
+                                        </div>
+                                            <li>
+                                            <textarea name="odetails" id="odetails" cols="100%" rows="10">
+                                            </textarea>
+                                            </li>
+                                    </div>
+                                </ul>
+                            </form>
+                        </div>
             </ul>
         </div>
     </nav>
 </header>
 <body>
-    <div>
-        <div>
-            <h2 id="details">Details</h2>
-            <div>
-                <form action="" class="fform">
-                    <div class="ffadiv">
-                        <ul>
-                            <li>
-                                <label for="fname">First Name: </label>
-                                <input type="text" id="fname" name="fname">
-                            </li>
-                            <li>
-                                <label for="lname">Last Name: </label>
-                                <input type="text" id="lname" name="lname">
-                            </li>
-                            <li>
-                                <label for="pname">Preferred Name: </label>
-                                <input type="text" id="pname" name="pname">
-                            </li>
-                            <li>
-                                <label for="pnoun">Pronoun's: </label>
-                                <input type="text" id="pnoun" name="pnoun">
-                            </li>
-                            </div>
-                    <div class="ffbdiv">
-                                <li>
-                                    <label for="gender">Gender:</label>
-                                    <select name="gender" id="gender">
-                                        <option value="select">Select Gender</option>
-                                        <option value="male">Male</option>
-                                        <option value="female">Female</option>
-                                        <option value="tmale">Trans Male</option>
-                                        <option value="tfemale">Trans Female</option>
-                                        <option value="nonbinary">Non Binary</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </li>
-                                <li>
-                                    <label for="btype">Blood Type</label>
-                                    <select name="btype" id="btype">
-                                        <option value="select">Select Blood Type</option>
-                                        <option value="opos">O Positive</option>
-                                        <option value="oneg">O Negative</option>
-                                        <option value="apos">A Positive</option>
-                                        <option value="aneg">A Negative</option>
-                                        <option value="bpos">B Positive</option>
-                                        <option value="bneg">B Negative</option>
-                                        <option value="abpos">AB Positive</option>
-                                        <option value="abneg">AB Negative</option>
-                                    </select>
-                                </li>
-                                <li>
-                                <label for="cperson">Emergency Contact Name: </label>
-                                <input type="text" id="cperson" name="cperson">
-                                </li>
-                                <li>
-                                <label for="cperson">Emergency Contact Number:</label>
-                                <input type="text" id="cperson" name="cperson">
-                                </li>
-                            
-                        </ul>
-                    </div>
-                </form>
-            </div>
-            <div>
-                <h2 id="allergies">Allergies</h2>
-                <p>List Of Allergies</p>
-            </div>
-            <div>
-                <form action="" class="aform">
-                    <ul>
-                        <li class="alist">
-                            <label for="">1:</label>
-                            <input type="text">
-                        </li>
-                        <li class="alist">
-                            <label for="">2:</label>
-                            <input type="text">
-                        </li>
-                        <li class="alist">
-                            <label for="">3:</label>
-                            <input type="text">
-                        </li>
-                        <li class="alist">
-                            <label for="">4:</label>
-                            <input type="text">
-                        </li>
-                        <li class="alist">
-                            <label for="">5:</label>
-                            <input type="text">
-                        </li>
-                        <li class="alist">
-                            <label for="">6:</label>
-                            <input type="text">
-                        </li>
-                        <div>
-                            <div>
-                                <li class="other-details">
-                                <label for="">Please fill in any other details:</label>
-                                </li>
-                            </div>
-                        <li>
-                        <textarea name="odetails" id="odetails" cols="100%" rows="10">
-                        </textarea>
-                        </li>
-                        
-                        <!--<li class="blist">
-                            <label for="">7:</label>
-                            <input type="text">
-                        </li>
-                        <li class="blist">
-                            <label for="">8:</label>
-                            <input type="text">
-                        </li>
-                        <li class="blist">
-                            <label for="">9:</label>
-                            <input type="text">
-                        </li>
-                        <li class="blist">
-                            <label for="">10:</label>
-                            <input type="text">
-                        </li>
-                        <li class="blist">
-                            <label for="">11:</label>
-                            <input type="text"></li>
-                        <li class="blist">
-                            <label for="">12:</label>
-                            <input type="text">
-                        </li>-->
-                        </div>
-                    </ul>
-                </form>
-                <form action="">
-                    <div>
-                        <h2 id="medications">Medications</h2>
-                        <p>List of Medications</p>
-                    </div>
-                        <ul>
-                            <li class="malist">
-                                <label for="">1:</label>
-                                <input type="text">
-                            </li>
-                            <li class="malist">
-                                <label for="">2:</label>
-                                <input type="text">    
-                            </li>
-                            <li class="malist">
-                                <label for="">3:</label>
-                                <input type="text">   
-                            </li>
-                            <li class="malist">
-                                <label for="">4:</label>
-                                <input type="text">
-                            </li>
-                            <li class="malist">
-                                <label for="">5:</label>
-                                <input type="text">
-                            </li>
-                            <li class="malist">
-                                <label for="">6:</label>
-                                <input type="text">
-                            </li>
-                        <div>
-                            <div>
-                                <li class="other-details">
-                                <label for="">Please fill in any other details:</label>
-                                </li>
-                            </div>
-                                <li>
-                                <textarea name="odetails" id="odetails" cols="100%" rows="10">
-                                </textarea>
-                                </li>
-                            <!--<li class="mblist">
-                                <label for="">7:</label>
-                                <input type="text">
-                            </li>
-                            <li class="mblist">
-                                <label for="">8:</label>
-                                <input type="text">
-                            </li>
-                            <li class="mblist">
-                                <label for="">9:</label>
-                                <input type="text">
-                            </li>
-                            <li class="mblist">
-                                <label for="">10:</label>
-                                <input type="text">
-                            </li>
-                            <li class="mblist">
-                                <label for="">11:</label>
-                                <input type="text">
-                            </li>
-                            <li class="mblist">
-                                <label for="">12:</label>
-                                <input type="text">
-                            </li>-->
-                        </div>
-                    </ul>
-                </form>
-                <form action="">
-                    <div>
-                        <h2 id="disabilities">Disabilities</h2>
-                        <p>List Of Disabilities</p>
-                    </div>
-                        <ul>
-                            <div>
-                                <li class="dalist">
-                                    <label for="">1:</label>
-                                    <input type="text">
-                                </li>
-                                <li class="dalist">
-                                    <label for="">2:</label>
-                                    <input type="text">
-                                </li>
-                                <li class="dalist">
-                                    <label for="">3:</label>
-                                    <input type="text">
-                                </li>
-                                <li class="dalist">
-                                    <label for="">4:</label>
-                                    <input type="text">
-                                </li>
-                                <li class="dalist">
-                                    <label for="">5:</label>
-                                    <input type="text">
-                                </li>
-                                <li class="dalist">
-                                    <label for="">6:</label>
-                                    <input type="text">
-                                </li>
-                            </div>
-                            <div>
-                                <div>
-                                    <li class="other-details">
-                                    <label for="">Please fill in any other details:</label>
-                                    </li>
-                                </div>
-                                    <li>
-                                    <textarea name="odetails" id="odetails" cols="100%" rows="10">
-                                    </textarea>
-                                    </li>
-                                <!--<li class="dblist">
-                                    <label for="">7:</label>
-                                    <input type="text">
-                                </li>
-                                <li class="dblist">
-                                    <label for="">8:</label>
-                                    <input type="text">
-                                </li>
-                                <li class="dblist">
-                                    <label for="">9:</label>
-                                    <input type="text">
-                                </li>
-                                <li class="dblist">
-                                    <label for="">10:</label>
-                                    <input type="text">
-                                </li>
-                                <li class="dblist">
-                                    <label for="">11:</label>
-                                    <input type="text">
-                                </li>
-                                <li class="dblist">
-                                    <label for="">12:</label>
-                                    <input type="text">
-                                </li>-->
-                            </div>
-                        </ul>
-                </form>
-            </div>
-        </div>
-        <div>
-            <footer>
-                <h3>Developed by The DARKN Group</h3>
-            </footer>
-        </div>
-    </div>            
+    <br>
+        <footer>
+            <h3>Developed by The DARKN Group</h3>
+        </footer>
+    </div>
+    <script>
+        const toggleBtns = document.querySelectorAll('.toggle-button');
+const toggleContents = document.querySelectorAll('.toggle-content');
+
+toggleBtns.forEach((btn, i) => {
+  btn.addEventListener('click', () => {
+    toggleContents.forEach((content, j) => {
+      if (i !== j) {
+        content.style.display = 'none';
+      }
+    });
+    toggleContents[i].style.display = toggleContents[i].style.display === 'none' ? 'block' : 'none';
+  });
+});
+</script>
 </body>
 </html>
